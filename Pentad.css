@@ -1,0 +1,831 @@
+body{
+    font-family: 'Inter' , sans-serif;
+   
+}
+.Main{
+    margin-left: 2.2rem;
+    margin-right: 2rem;
+}
+/*****first section *******/
+.section{
+    background-color: #000000;
+    position:absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 100%;
+    height: 2rem;
+    line-height: 33px;
+}
+.separator{
+    background-color: #948e99;
+    opacity: 0.3;
+    width: 0.08rem;
+    height: 1.5rem;
+    
+}
+/***** second section *******/
+ul.navbar{
+    display: flex;
+    list-style: none;
+    padding-top: 1rem;
+    padding-left: 0rem;
+    
+    position: sticky;
+
+    
+}
+.navbared{
+  position: sticky;
+  
+}
+
+ 
+
+
+ul.navbar li{
+    margin-right: 1.2rem;
+    padding-left: 0;
+    
+    
+    
+}
+ul.navbar li a{
+    text-decoration: none;
+    color: #0e1728; 
+    font-weight:670;
+    
+   
+    
+}
+ul.navbar .first{
+  margin-left: 3rem;
+}
+
+ul.navbar li a:hover{
+    color: red;
+}
+ul.navbar li button{
+    border:0.14rem solid red;
+    width: 7rem;
+    height: 3rem;
+    background-color: white;
+    color: red;
+    font-size: large;
+    cursor: pointer;
+   
+}
+ul.navbar li button:hover{
+    background-color: red;
+    color: white;
+}
+/*****third section *******/
+.Home{
+    display: flex;
+}
+.Home div{
+    display:"block";
+    margin-right: 7rem;
+    
+}
+.Home img{
+    width: 40rem;
+    height: 25rem;
+    animation: reveal-animation 4s infinite;
+    
+}
+.Home div h1{
+    font-size: 4rem;
+    font-weight: 900;
+    animation: appear 4s forwards infinite;
+
+}
+.Home div h3{
+    color: #4d5b70;
+    font-weight: 500;
+    font-size: 1.3rem;
+    animation: appear 4s forwards infinite;
+}
+.Home div h2{
+    font-size: 2rem;
+    animation: appear 4s forwards infinite;
+}
+.Home div button{
+    border:0.14rem solid red;
+    width: 12rem;
+    height: 4rem;
+    background-color: red;
+    animation: appear 4s forwards infinite;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+.Home div button:hover{
+    background-color: white;
+    color: red;
+}
+
+
+  
+@keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes reveal-animation {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: carousel-animation 16s infinite;
+  }
+  
+  .page {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 10rem !important;
+  }
+  
+  @keyframes carousel-animation {
+    0%, 20% {
+      transform: translateX(0);
+    }
+    25%, 45% {
+      transform: translateX(-100%);
+    }
+    50%, 70% {
+      transform: translateX(-200%);
+    }
+    75%, 95% {
+      transform: translateX(-300%);
+    }
+  }
+  /*****fourth section *******/
+  .products{
+    background-color: #f8f1e9;
+    display: block;
+    height: 40rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+.products ul{
+  display: flex;
+}
+.products ul li{
+  list-style: none;
+ 
+ 
+}
+  .products h3{
+    font-size: 2.3rem;
+    margin-left: 2rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+   
+  }
+  .products div{
+    display: flex;
+    width: 100%;
+  }
+  .products div img{
+    width: 35rem;
+    margin-right: 8rem;
+    margin-left: 2rem;
+  }
+  .products div div{
+    display: block;
+  
+    height: 12rem;
+    
+   
+  }
+  .products div div h1{
+    font-size: 7rem;
+    font-weight: 600;
+    padding: 0rem;
+  }
+  .products div div h2{
+    top: 0;
+    border: 0;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .products div div button{
+    border:0.14rem solid red;
+    width: 8.3rem;
+    height: 3.6rem;
+    background-color: red;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+  }
+  .products div div button:hover{
+    background-color: #f8f1e9;
+    color: red;
+  }
+  .products div div div{
+    display: flex;
+  }
+ 
+  .products div div div p{
+    padding-top: 8rem;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  /*-----fifth*/
+  .page3content{
+  
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 3rem ;
+  
+  }
+  .page3content .leftside{
+    width: 30rem;
+    margin-right: 2rem;
+  }
+  .page3content .leftside h2{
+    font-size: 2.3rem;
+    font-weight: bolder;
+  }
+  .page3content .leftside .description{
+    font-size: 1.1rem;
+  }
+  .page3content .leftside .button{
+    border:0.14rem solid red;
+    width: 12rem;
+    height: 3.2rem;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    
+    cursor: pointer;
+  }
+  .page3content .leftside .button:hover{
+    color: red;
+    background-color: white;
+  }
+  .page3content .leftside .content2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+  .page3content .rupee{
+    font-size: 6rem;
+    font-weight: bolder;
+  }
+  .page3content .sign{
+    font-size: 2rem;
+  }
+ 
+
+.rightside{
+  margin-left: 3rem;
+}
+
+.rightside .rightside1 {
+  display: flex;
+  margin-top: 1rem;
+  
+ 
+}
+.rightside .rightside1 .rightside12{
+  display: block;
+  margin-left: 2rem;
+ 
+  left: 0;
+  text-align: left
+}
+  .rightside h3 {
+  
+    font-size: 1.3rem;
+    
+  }
+/*****sixth section *******/
+  .my-div .ourplatform{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 40rem;
+    margin-left: 20rem;
+  }
+  .my-div .ourplatform h1{
+    font-size: 2.4rem;
+  }
+ .containers{
+  background-color: #F4F9FB;
+  width: 30rem;
+  height: 35rem;
+  padding: 1rem;
+  
+ }
+ .outsidecontainer{
+  display: flex;
+  margin: auto;
+  justify-content:space-around;
+ }
+ .imagecontain{
+  display: block;
+  margin-top: 2rem;
+ }
+ .imagecontain h5{
+  font-size: 1.4rem;
+  width: 25rem;
+  margin-left: 3rem;
+  text-align: left;
+ }
+ .imagecontain h3{
+  font-size: 1.4rem;
+  width: 25rem;
+  margin-left: 1rem;
+  font-weight: 900;
+  text-align: left;
+ }
+ .imagecontain img{
+  width: 25rem;
+  margin-left: 1rem;
+ }
+ .containers .itemcontain{
+  display: flex;
+  margin-left: 2rem;
+  
+  
+ }
+ .itemcontain .speacial{
+  width: 3rem;
+ }
+ .itemcontain .QR{
+  width: 2rem;
+  height: 2rem;
+ }
+ .itemcontain .logo{
+  width: 6rem;
+  height: 2rem;
+ }
+ .itemcontain button{
+    border:0.14rem solid red;
+    width: 6rem;
+    height: 2rem;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    margin-top: rem;
+    cursor: pointer;
+    margin-left: 1rem;
+
+ }
+ /*****seventh section *******/
+ .broker{
+  display: block;
+  overflow: hidden;
+  width: 100%;
+ }
+ .broker h1{
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+ }
+ .broker img{
+  margin-left: 4rem;
+ }
+
+.marquee-content {
+  animation: marquee 40s linear infinite;
+  display: flex;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.blog h2{
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.recent{
+  display: block;
+  width: 20rem;
+}
+.recentflex{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.recent img{
+  width: 20rem;
+  max-height: 15rem;
+
+}
+.recent img:hover{
+  transform: scale(1.1);
+}
+.recent p{
+  color: grey;
+  font-size: .9rem;
+}
+.recent h5{
+  font-size: 1.2rem;
+}
+.recent h6{
+  font-size: 1rem;
+  color: #948e99;
+  font-style: italic;
+  font-weight: 400;
+}
+.blog button{
+  border:0.14rem solid red;
+  width: 9rem;
+  height: 3rem;
+  background-color: white;
+  color: red;
+  font-size: large;
+  cursor: pointer;
+  margin-left: 35rem;
+  margin-bottom: 10rem;
+  
+}
+.blog button:hover{
+  background-color: red;
+  color: white;
+}
+ /*****Eigth section *******/
+  
+.footer{
+  background-color: #0A2129;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 42rem;
+  display: block;
+}
+.footer .listone{
+  display: flex;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+.footer .address{
+  width: 14rem;
+}
+.footer .address .addressmain{
+  color: white;
+  font-weight: 200;
+  font-size: .9rem;
+  line-height: 1.6rem;
+ 
+}
+.footer .address .socialmedia{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.footer .listone .platform{
+  color: white;
+}
+.footer .platform{
+  list-style: none;
+  margin-left: 3rem;
+  margin-right: rem;
+  width: 13rem;
+ 
+}
+.footer .platform li{
+  margin-top: 1rem;
+  font-size: .9rem;
+  font-weight: 200;
+}
+.footer .listtwo{
+  list-style: "| ";
+  display: flex;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin-left: 2rem;
+  position: absolute;
+  padding-top: .5rem;
+  
+  
+}
+.footer ul .listtwo{
+  list-style-position: outside;
+ 
+}
+.footer .listtwo li{
+  margin-left: 1rem;
+}
+.footer .flexed{
+  display: flex;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+.footer .heading1{
+  color: white;
+  position:absolute;
+}
+.footer .listtwo .nodecor{
+  list-style: none;
+}
+.footer .discription{
+  width: 70rem;
+  margin-left: 4rem;
+  color: white;
+  font-size: .8rem;
+  font-weight: lighter;
+  position: relative;
+  margin-top: 5rem;
+}
+.button1 {
+  padding: 15px 28px;
+  margin: 10px;
+  background-color:  #e2ddd9;
+  color:black;
+  font-size: .9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*****media query*********/
+
+@media screen and (max-width: 480px) {
+  ul.navbar li a{
+      display: none;
+  }
+  ul.navbar li .login{
+    display: none;
+  }
+  ul.navbar li img{
+    width: 4rem;
+  }
+  .section{
+    display: none;
+  }
+  .Home{
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+   
+  }
+  .Home div{
+    margin-right: 0rem !important;
+  }
+  .Home .Trade{
+   
+  }
+  .Home div h1{
+    font-size: 1.6rem !important;
+    animation: none !important;
+  }
+  .Home img{
+    width: 50% !important;
+    height: 10% !important;
+    justify-content: center !important;
+    align-items:  center !important;
+    animation: none !important;
+   
+    order: -1 !important;
+    
+  }
+  .Home div h2{
+    animation: none !important;
+    font-size: 1rem !important;
+  }
+  .Home div h3{
+    animation: none !important;
+    font-size: 0.6rem !important;
+  }
+  .Home div button{
+    animation: none !important;
+    width: 12rem !important;
+    height: 2rem !important;
+    font-size: .6rem !important;
+  }
+  .products{
+    display: block;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    
+  }
+  .products h3{
+    font-size: 1.7rem !important;
+    margin-left: 0rem !important;
+    
+  }
+  .products div img{
+    width: 20rem !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    padding-left: 0rem !important;
+
+  }
+  .products div div div h1{
+    font-size: 1.9rem !important;
+   
+  }
+  .products div div div p{
+    font-size: 1rem !important;
+    padding-top: 1rem !important;
+  }
+  .products div div div{
+    display: flex !important;
+  }
+  .products div{
+    display: block!important;
+   
+  }
+  .products div div{
+    display: block !important;
+    width: 100%!important;
+    height: 2rem !important;
+    font-size: 2rem;
+    justify-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+    
+    
+   
+  }
+  .products .productlist{
+    display: none;
+  }
+  .products div div h2{
+    font-size: 1rem !important;
+  }
+  .products div div button{
+    border:0.10rem solid red;
+    width: 9rem !important;
+    height: 2rem !important;
+    background-color: red;
+    color: white;
+    font-size: .6rem !important;
+    cursor: pointer;
+    display: block !important;
+    margin: auto;
+  
+   
+  }
+  .page3content{
+    display: block !important;
+    margin: auto !important;
+    
+   width: 20rem !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .page3content .leftside{
+    margin: auto !important;
+    width: 22rem !important;
+  }
+  .page3content .leftside h2{
+    font-size: 1.7rem !important;
+    
+  }
+  .page3content .leftside .description{
+    font-size: 1rem !important;
+  }
+  .page3content .leftside .button{
+    border:0.14rem solid red;
+    width: 8rem !important;
+    height: 2rem !important;
+    background-color: red;
+    color: white;
+    font-size: .6rem !important;
+    cursor: pointer;
+    order: -1;
+  }
+  .page{
+    height: 10rem;
+  }
+  .page3content .rupee{
+    font-size: 3rem !important;
+  }
+  .page3content .sign{
+    font-size: 1rem !important;
+  }
+  .rightside{
+    margin: auto!important;
+  }
+  .rightside .rightside1{
+    display: block !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0rem !important;
+  }
+  .rightside .rightside1 .rightside12{
+    text-align: center !important;
+    margin: 0rem !important;
+  }
+  .rightside h3{
+    font-size: 1rem !important;
+  }
+  
+  .my-div .ourplatform{
+    margin:auto!important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20rem !important;
+  }
+  .my-div .ourplatform h1{
+    font-size: 2rem !important;
+    text-align: center !important;
+  }
+  .my-div .ourplatform p{
+    font-size: 0.8rem !important;
+  }
+  .containers{
+    width: 30rem !important;
+    align-items: center !important;
+    margin: auto !important;
+  }
+  .outsidecontainer{
+    justify-content: center !important;
+  }
+
+  .outsidecontainer{
+    display: block !important;
+  }
+  .imagecontain{
+    
+    align-items: center !important;
+    justify-content: center !important;
+  }
+ 
+  .imagecontain h5{
+    font-size: 1rem !important;
+    text-align: center !important;
+    margin-left: 0rem !important;
+    
+  }
+  .imagecontain h3{
+    font-size: 1rem !important;
+    
+  }
+  .imagecontain img{
+    margin-left: 1 !important;
+    
+  }
+  .itemcontain button{
+    display: block !important;
+  }
+  .broker{
+    width: 40rem !important;
+    overflow: hidden !important;
+  }
+  .broker h1{
+    text-align: center !important;
+  }
+  .blog h2{
+   
+    text-align: center !important;
+  }
+.blog{
+  justify-content: center !important;
+  margin: auto !important;
+  overflow:scroll !important;
+  text-align: center !important;
+}
+.footer .listone{
+  display: block !important;
+}
+.footer .listone .platform li{
+  display: none;
+}
+.footer .listone .address img{
+  display: none;
+}
+.footer .listone .flexed .listtwo{
+  display: none;
+}
+
+}
+
+/*****media query*********/
+
